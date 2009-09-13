@@ -5,7 +5,7 @@ Using Rubedo
 
   1. Install Icecast, SQLite3, Libogg, Libvorbis, Libshout, a few Ruby gems.
   2. Pick a folder everyone has access to, like a shared network drive, for everyone to put their music (MP3s, OGGs) in.
-  3. Edit config.yml, at least to specify the above folder. 
+  3. Copy config.yml.example to config.yml, and edit it to include your details.
   4. Start Icecast.
   5. Run rubedo.rb.
   6. Start queueing songs in your browser.
