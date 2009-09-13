@@ -1,0 +1,41 @@
+# The name of your radio station, displayed prominently on the frontend and used to title the radio stream.
+radio_name: Rubedo - Ruby Radio
+
+# Where you're putting all your music.  This can be an absolute or relative (from rubedo.rb) path 
+# to the directory where all music will be stored.
+music_folder: music
+
+# Allow songs playing when no song is queued to be interrupted when a song is queued by a user.
+# Defaults to false.
+interrupt_empty_queue: false
+
+# Allow users to download the song that is "Now Playing".  Defaults to true.
+allow_download: true
+
+# Fill in your Icecast server details here.
+# If you're running Rubedo on the same machine that the Icecast server is running on (recommended), leave the server as "localhost".
+# The "mount" is the location of the stream on the server, and defaults to "radio".  This would make the stream URL: http://[domain]:[port]/radio
+# The default values are Icecast's defaults, except for the mount point, which is determined by the source client.
+# So, if you want to change the mount URL to something besides /radio, you don't have to change Icecast's config file, just change it here.
+icecast:
+  server: localhost
+  port: 8000
+  username: source
+  password: hackme
+  mount: /radio
+
+# This is the port the web frontend will be available at.
+# If you already have a server (like Apache) running on the machine at port 80, you should change this.
+frontend_port: 80
+
+# If this is set to true, running rubedo.rb will start both the frontend and the source client.
+# That also means that if the frontend's process is killed, the source client will stop, and you 
+# will disconnect everyone from the stream.
+# To decouple these, meaning you must start them separately and stop them separately, turn this to false.
+# Then, to start the source client on its own, run dj.rb.
+start_source_client: true
+
+# Name of the log file the source client (dj.rb) uses.  Leave this blank to disable logging (default).
+dj_log_file: 
+# Name of the log file the frontend (rubedo.rb) uses.  Leave this blank to disable logging (default).
+frontend_log_file: 

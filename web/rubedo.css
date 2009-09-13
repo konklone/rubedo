@@ -1,0 +1,97 @@
+body {font-family: "Verdana", "Arial"; height: 100%; background-color: #fff; padding: 0; margin: 0;} 
+img {border: 0} 
+a {color: #3e5e9a;}
+#title {
+  text-align: left; padding-left: 20px;
+  background-color: #e1e7fc;
+  font-size: 2.5em; 
+  padding-top: 5px;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #3e5e9a;
+  font-family: "Palatino Linotype", "Times New Roman", serif;
+} #title a {color: black; text-decoration: none}
+
+#songs {
+  float: left;
+  width: 47%;
+  margin-right: 5px;
+  padding-top: 0px;
+  margin-left: 5px;
+}
+#songs div.header {}
+#songs div.header img#spinner {padding-right: 10px; margin-bottom: -2px; display: none;}
+#songs div.header div.title {font-weight: bold; padding-left: 10px; float: left; margin-top: 2px;}
+#songs div.header div.search {float: right; font-size: 0.8em; margin-bottom: 6px;}
+#songs div.header div.search input {margin-left: 8px; border: 1px solid #aaa;}
+#songs span.insufficient {padding-left: 10px;}
+#songs div#available {height: 79%; overflow: auto; clear: both; width: 100%;}
+
+#songs div.song {padding-bottom: 5px; font-size: 0.8em; padding-left: 13px;}
+#songs div.song.light {}
+#songs div.song.dark {background-color: #f5f5f9;}
+#songs div.song.mp3 a {}
+#songs div.song.ogg a {color: #3e8a4e;}
+#songs div.song span.button {font-size: 8pt; padding-right: 10px;}
+#songs div.song a {text-decoration: none; color: #228; font-size: 1.2em;}
+#songs div.song a:hover {text-decoration: underline}
+
+#radio {
+  float: left; width: 48%;
+  padding-left: 15px;
+  height: 82.5%;
+}
+#radio #playing {
+  padding-bottom: 0px; padding-top: 0px; padding-left: 15px; padding-right: 10px;
+  font-size: 1.0em;
+  border: 1px solid #d1d1d1;
+  background-color: #f6f6fc;
+}
+
+#radio #playing div.banner {font-weight: bold;}
+#radio #playing div.banner div.now {float: left; padding-top: 10px;}
+#radio #playing div.banner div.links {float: right; padding-top: 11px; padding-right: 0px;}
+#radio #playing div.banner div.links div {float: left}
+#radio #playing div.banner div.links a {font-size: 0.8em; text-decoration: none; color: #2e5eb1;}
+#radio #playing div.banner div.links a:hover {text-decoration: underline}
+#radio #playing div.banner div.links span.left {padding-left: 20px; padding-right: 3px; font-size: 7pt}
+#radio #playing div.banner div.links span.right {padding-right: 10px; padding-left: 3px; font-size: 7pt}
+#radio #playing div.banner div.links div.middle {padding-right: 8px; padding-left: 8px; padding-top: 2px; font-size: 7pt; float: left}
+
+#radio #playing div#now_playing {
+  padding-top: 12px; padding-bottom: 13px;
+  font-style: normal; 
+  clear: both;
+}
+
+#radio #queue {
+  font-size: 1.0em;
+  padding-left: 15px;
+  margin-top: 15px;
+}
+#radio #queue div.list {overflow: auto; height: 79%;}
+#radio #queue div.queue {font-weight: bold; padding-bottom: 6px;}
+#radio #queue div.queued {
+  font-size: 0.8em;
+  padding-left: 5px; padding-bottom: 2px;
+  clear: both; float: left;
+}
+#radio #queue div.queued.light {}
+#radio #queue div.queued.dark {background-color: #f2fcf2;}
+#radio #queue div.queued span.title {float: left; font-style: italic;}
+#radio #queue div.queued span.queued {font-size: 8pt; font-family: Arial, sans-serif; color: #666; font-style: normal; padding-top: 2px; padding-right: 10px; float: right;}
+#radio #queue div.queued a.delete {float: right; padding-right: 10px; text-decoration: none;}
+#radio #queue div.queued a.delete img {padding-top: 3px;}
+
+#footer {
+  clear: both;
+  margin-top: 10px;
+  padding-top: 9px; padding-bottom: 11px;
+  text-align: center;
+  font-size: 0.7em;
+  position: absolute;
+  width: 100%;
+  border-top: 1px solid #3e5e9a;
+  bottom: 0px;
+  background-color: #e1e7fc;
+}

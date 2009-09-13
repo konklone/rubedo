@@ -1,0 +1,27 @@
+Version 1.2 - 12-27-2007
+
+  - Songs can be deleted from the queue by anyone
+  - An in-browser Flash player (works only for MP3s)
+  - Basic OGG support
+  - Lightly cycling color codes on song lists
+  - Search box now checks songs' filename and path
+  - Favicon support (comes with Rubedo's logo by default)
+  - Added option to disable download of currently playing song
+  - CSS extracted to its own file for easy modding
+  - Mootools JS extracted to its own file
+  - Source client shares a DB file with the frontend again, using HTTP was too latent
+  - Restyled queue section
+  - Refactored controller code for simplicity
+  - Removed Campfire client for now
+  - Removed SQLite3 and sqlite3-ruby from package
+
+Version 1.1 - 02-18-2007
+
+  - Source client now POSTs to the frontend, instead of sharing a DB file
+  - Added a Campfire client using Marshmallow
+  - Bundled SQLite3 and sqlite3-ruby
+  - Bundled Markaby
+  
+Version 1.0 - 02-12-2007
+
+  - Initial release
