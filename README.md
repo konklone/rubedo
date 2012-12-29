@@ -1,6 +1,6 @@
 # Not Maintained
 
-This project is not maintained.
+This project is incredibly old, and not maintained.
 
 ## Using Rubedo
 
