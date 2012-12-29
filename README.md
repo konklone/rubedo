@@ -1,3 +1,6 @@
+# Not Maintained
+
+This project is not maintained.
 
 ## Using Rubedo
 
